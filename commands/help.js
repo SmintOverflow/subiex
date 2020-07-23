@@ -31,7 +31,7 @@ Subiex.registerCommand('help', 'default', (message, bot) => {
             title: "Subiex Help",
             fields: [{
                     name: 'Information',
-                    value: 'Bot prefix : **!**\nServing in **' + bot.guilds.size + '** servers\n' + 'Created by **Klendi**\n' + 'Want to add a command? Make a pull request (https://github.com/klendi/subiex)\n\n'  ,
+                    value: 'Bot prefix : **!**\nServing in **' + bot.guilds.size,
                 },
                 {
                     name: 'Commands **(' + defaultcmds + ')**',
