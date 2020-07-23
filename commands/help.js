@@ -31,7 +31,7 @@ Subiex.registerCommand('help', 'default', (message, bot) => {
             title: "Subiex Help",
             fields: [{
                     name: 'Information',
-                    value: 'Bot prefix : **!**\nServing in **' + bot.guilds.size,
+                    value: 'Bot prefix : **!**\nServing in ' + '*' + bot.guilds.size + '* Servers!',
                 },
                 {
                     name: 'Commands **(' + defaultcmds + ')**',
