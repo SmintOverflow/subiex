@@ -8,7 +8,7 @@ dotenv.load()
 
 bot.on('ready', () => {
     console.log('Works');
-    bot.user.setActivity('!help', {
+    bot.user.setActivity(`$help | Serving ${client.guilds.size} servers`, {
         type: 'STREAMING',
         url: 'https://www.twitch.tv/smintgaming'
     });
