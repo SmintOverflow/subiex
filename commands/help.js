@@ -28,7 +28,7 @@ Subiex.registerCommand('help', 'default', (message, bot) => {
     message.channel.send({
         embed: {
             color: 9384170,
-            title: "Subiex Help",
+            title: "Help Information",
             fields: [{
                     name: 'Information',
                     value: 'Bot prefix : **!**\nServing in ' + '*' + bot.guilds.size + '* Servers!',
