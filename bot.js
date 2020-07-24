@@ -6,26 +6,12 @@ const config = require('./config')
 const dotenv = require('dotenv')
 dotenv.load()
 
-client.on('ready', function() {
-      setInterval(async () => {
-    const statuslist = [
-      `!help | Serving ${client.guilds.size} servers`,
-      `!help | Serving ${client.users.size} users`
-    ];
-    const random = Math.floor(Math.random() * statuslist.length);
-
-    try {
-      await client.user.setPresence({
-        game: {
-          name: `${statuslist[random]}`,
-          type: "STREAMING",
-          url: 'https://www.twitch.tv/smintgaming'
-        },
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  }, 10000);
+bot.on('ready', () => {
+     console.log('Works');
+     bot.user.setActivity('!help', {
+         type: 'STREAMING',
+         url: 'https://www.twitch.tv/smintgaming'
+     });
 });
 
 bot.on("message", (message) => {
