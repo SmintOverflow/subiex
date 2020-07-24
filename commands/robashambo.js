@@ -17,7 +17,7 @@
     // 🖖 for later use :D
 */
 
-const Confax = require('../bot.js')
+const Subiex = require('../bot.js')
 const allMoves = [
   'rock', '✊', '🤜', '🤜', '👊',
   'paper', '✋', '🖐', '📄', '📃', '🗒',
@@ -25,7 +25,7 @@ const allMoves = [
 ]
 const mojiMoves = [' 👊', ' ✋', ' ✌']
 
-Confax.registerCommand('roshambo', 'default', (message) => {
+Subiex.registerCommand('roshambo', 'default', (message) => {
   let channel = message.guild.channels.find('name', 'chill')
   //  Command only works in #chill
   if (channel != null && channel === message.channel) {
