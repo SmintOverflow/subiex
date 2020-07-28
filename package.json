@@ -8,6 +8,7 @@
     "npm": "6.4.1"
   },
   "dependencies": {
+    "axiom": "^0.1.6",
     "discord.js": "^11.3.2",
     "dotenv": "^6.0.0",
     "js-yaml": "^3.12.0",
