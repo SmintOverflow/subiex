@@ -12,7 +12,6 @@ Subiex.registerCommand('quote', 'default', (message) => {
   axios({
     method: 'get',
     url: 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?',
-    responseType: 'stream'
   })
     .then(function (response) {
       console.log(response.data.quoteText);
