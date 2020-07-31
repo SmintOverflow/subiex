@@ -7,11 +7,11 @@ const dotenv = require('dotenv')
 dotenv.load()
 
 bot.on('ready', () => {
-     console.log('Works');
-     bot.user.setActivity('!help', {
-         type: 'STREAMING',
-         url: 'https://www.twitch.tv/smintgaming'
-     });
+    console.log('Works');
+    bot.user.setActivity('!help', {
+        type: 'STREAMING',
+        url: 'https://www.twitch.tv/smintgaming'
+    });
 });
 
 bot.on("message", (message) => {
