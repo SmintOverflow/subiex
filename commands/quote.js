@@ -16,7 +16,7 @@ Subiex.registerCommand('quote', 'default', (message) => {
   })
     .then(function (response) {
       console.log(response.data.quoteText);
-      message.channel.send(response.data.quoteText + " - " + response.data.quoteAuthor).catch(err => console.error(err.stack))
+      message.channel.send(response.data.quoteText + "- " + response.data.quoteAuthor).catch(err => console.error(err.stack))
     }).on("error", (err) => {
     console.log("Error: " + err.message);
   });
