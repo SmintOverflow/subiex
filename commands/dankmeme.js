@@ -1,7 +1,7 @@
 const Subiex = require('../bot.js')
 const Discord = require('discord.js')
 const https = require('https')
-const url = 'https://www.reddit.com/r/memes/.json?limit=100'
+const url = 'https://www.reddit.com/r/dankmemes/hot/.json?limit=100'
 
 Subiex.registerCommand('meme', 'default', (message, bot) => {
   https.get(url, (result) => {
