@@ -28,4 +28,4 @@ Subiex.registerCommand('8ball', 'default', (message, bot) => {
     const randomIndex = Math.floor(Math.random() * responses.length);
 
     message.channel.send(responses[randomIndex])
-}, ['8ball'], 'Ask The 8Ball!', '[]')
+}, ['eightball'], 'Ask The 8Ball!', '[]')
