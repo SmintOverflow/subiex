@@ -8,7 +8,7 @@ Subiex.registerCommand('purge', 'moderator', (message, bot) => {
   let mentions = message.mentions.users.array()
 
   if (!deletePerms) {
-    return "Confax doesn't have enough permissions to delete messages."
+    return "FortuneBot doesn't have enough permissions to delete messages."
   } else if (isNaN(amount)) {
     return 'Please provide the amount of messages you would like to delete.'
   } else if (amount < 1) {

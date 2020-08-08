@@ -1,8 +1,7 @@
 const Discord = require('discord.js')
 const Subiex = require('../bot.js')
 const axios = require('axios');
-
-
+const superagent = require('superagent');
 
 Subiex.registerCommand('quote', 'default', (message) => {
   let options = {
