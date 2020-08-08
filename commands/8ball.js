@@ -27,5 +27,17 @@ Subiex.registerCommand('8ball', 'default', (message, bot) => {
 
     const randomIndex = Math.floor(Math.random() * responses.length);
 
-    message.channel.send(responses[randomIndex])
+    if (message.content.length == 0) {
+        message.channel.send({
+            embed: {
+                color: 0xfc1846,
+                description: '**' + 'Error, empty argument' + '**',
+            }
+        });
+        return;
+    }
+        else
+        {
+            message.channel.send(responses[randomIndex])
+        }
 }, ['eightball'], 'Ask The 8Ball!', '[]')
