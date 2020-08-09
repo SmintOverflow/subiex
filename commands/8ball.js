@@ -29,7 +29,7 @@ Subiex.registerCommand('8ball', 'default', (message, bot) => {
         message.channel.send({
             embed: {
                 color: 0xfc1846,
-                description: '**' + 'Error, empty argument' + '**',
+                description: '**' + 'Error, you asked nothing to the 8ball, why?' + '**',
             }
         });
         return;
