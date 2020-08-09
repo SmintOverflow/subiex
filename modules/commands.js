@@ -13,7 +13,7 @@ bot.on('message', (message) => {
     } else if (message.content.indexOf(config.prefix, 0) !== 0) {
         // This is not a command (no prefix)
     } else {
-        let userCommand = message.content.split(' ')[0].replace('!', '').toLowerCase()
+        let userCommand = message.content.split(' ')[0].replace(',', '').toLowerCase()
         for (let loopCmdType in commands) {
             for (let loopCmd in commands[loopCmdType]) {
                 if (userCommand.valueOf() === (loopCmd).valueOf()) {
