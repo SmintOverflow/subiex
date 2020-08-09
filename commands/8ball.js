@@ -38,5 +38,17 @@ Subiex.registerCommand('8ball', 'default', (message, bot) => {
         message.channel.send("are you gae?");
         return;
     }
+    if (message.content == "is smint gae") {
+        message.channel.send("are you gae?");
+        return;
+    }
+    if (message.content == "is smint gay?") {
+        message.channel.send("are you gae?");
+        return;
+    }
+    if (message.content == "is smint gay") {
+        message.channel.send("are you gae?");
+        return;
+    }
     message.channel.send(responses[randomIndex])
 }, ['eightball'], 'Ask The 8Ball!', '[]')
