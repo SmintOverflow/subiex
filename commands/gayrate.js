@@ -32,7 +32,7 @@ Subiex.registerCommand('gayrate', 'default', (message, bot) => {
   else if (myMention.id === config.master) {
     const random = Math.floor(Math.random() * 2)
 
-    console.log('It is klendi')
+    console.log('It is smint')
     message.channel.send({
       embed: {
         author: {
