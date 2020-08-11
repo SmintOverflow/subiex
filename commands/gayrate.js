@@ -16,7 +16,7 @@ Subiex.registerCommand('gayrate', 'default', (message, bot) => {
           name: message.author.username,
           icon_url: message.author.avatarURL
         },
-        title: 'Scanning...',
+        title: 'Gayr8 Scanner',
         thumbnail: {
           url: message.author.avatarURL
         },
@@ -39,11 +39,11 @@ Subiex.registerCommand('gayrate', 'default', (message, bot) => {
           name: myMention.username,
           icon_url: myMention.avatarURL
         },
-        title: 'Scanning...',
+        title: 'Gayr8 Scanner',
         thumbnail: {
           url: myMention.avatarURL
         },
-        description: `${myMention.username} is ${random}% gay! :gay_pride_flag:`,
+        description: `${myMention.username} is 0% gay! :gay_pride_flag:`,
         color: 9384170,
         timestamp: new Date(),
         footer: {
@@ -62,11 +62,11 @@ Subiex.registerCommand('gayrate', 'default', (message, bot) => {
           name: myMention.username,
           icon_url: myMention.avatarURL
         },
-        title: 'Scanning...',
+        title: 'Gayr8 Scanner',
         thumbnail: {
           url: myMention.avatarURL
         },
-        description: `${myMention.username} is ${random}% gay! :gay_pride_flag:`,
+        description: `${myMention.username} is 0% gay! :gay_pride_flag:`,
         color: 9384170,
         timestamp: new Date(),
         footer: {
@@ -82,7 +82,7 @@ Subiex.registerCommand('gayrate', 'default', (message, bot) => {
           name: myMention.username,
           icon_url: myMention.avatarURL
         },
-        title: 'Scanning...',
+        title: 'Gayr8 Scanner',
         thumbnail: {
           url: myMention.avatarURL
         },
@@ -95,4 +95,4 @@ Subiex.registerCommand('gayrate', 'default', (message, bot) => {
       }
     })
   }
-}, ['gay', 'dankmeme'], 'Generate Random memes', 'name "[Text Here]"')
+}, ['gay', 'gayr8'], 'Scan Someones Gayrate', 'name "[Text Here]"')

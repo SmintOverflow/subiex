@@ -6,4 +6,4 @@ Subiex.registerCommand('ping', 'default', (message, bot) => {
     .then(m => {
       m.edit(`Pong! took \`${m.createdTimestamp - message.createdTimestamp}\`ms`)
     })
-}, ['response'], 'Bot Response Test', '[]')
+}, ['response', "test"], 'Bot Response Test', '[]')
