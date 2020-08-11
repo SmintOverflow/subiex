@@ -92,4 +92,4 @@ Subiex.registerCommand('gamerrate', 'default', (message, bot) => {
             }
         })
     }
-}, ['gamer', 'gamerr8'], 'Scan Someones Simprate', 'name "[Text Here]"')
+}, ['gamer', 'gamerr8'], 'Scan Someones Gamerrate', 'name "[Text Here]"')
