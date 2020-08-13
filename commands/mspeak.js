@@ -22,4 +22,4 @@ Subiex.registerCommand('mspeak', 'master', (message, bot) => {
     if (deleteMessage) message.delete()
     if (msg === '') return "The message can't be empty!"
     channel.send(myMention + msg)
-}, ['talk', 'say'], 'Make the bot speak to a given channel', '[to channel] <to member> [message]')
+}, ['mtalk', 'msay'], 'Make the bot speak to a given channel', '[to channel] <to member> [message]')
