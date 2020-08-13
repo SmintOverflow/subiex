@@ -83,7 +83,7 @@ Subiex.registerCommand('simprate', 'default', (message, bot) => {
                 thumbnail: {
                     url: myMention.avatarURL
                 },
-                description: `${myMention.username} is ${randomnumber}% simp!:`,
+                description: `${myMention.username} is ${randomnumber}% simp!`,
                 color: 9384170,
                 timestamp: new Date(),
                 footer: {
