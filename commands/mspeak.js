@@ -1,4 +1,8 @@
 const Subiex = require('../bot.js')
+const Discord = require('discord.js')
+const bot = Subiex.bot
+const config = Subiex.config
+const commands = Subiex.commands
 
 Subiex.registerCommand('mspeak', 'master', (message, bot) => {
     let myMention = message.mentions.users.array()[0]
@@ -22,4 +26,4 @@ Subiex.registerCommand('mspeak', 'master', (message, bot) => {
     if (deleteMessage) message.delete()
     if (msg === '') return "The message can't be empty!"
     channel.send(myMention + msg)
-}, ['mtalk', 'msay'], 'Make the bot speak to a given channel', '[to channel] <to member> [message]')
+}, ['mtalk', 'msay'], 'Make the bot speak to a given channel [master edition]', '[to channel] <to member> [message]')
