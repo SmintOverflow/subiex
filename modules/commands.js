@@ -50,6 +50,10 @@ bot.on('message', (message) => {
                     if (accepted.includes(roles[i].name)) {
                         isMod = true
                         break
+                    };
+                    for (message.guild.ownerID == message.guild.member(message.author.id)){
+                        isMod = true
+                        break
                     }
                 }
                 if (!isMod) {
