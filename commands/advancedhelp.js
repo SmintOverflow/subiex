@@ -43,4 +43,4 @@ Confax.registerCommand('advancedhelp', 'default', (message, bot) => {
         split: true
     })
     return 'I sent you the advanced help list as a DM!'
-}, [], 'List advanced information about every registered command', '[]')
+}, ['ahelp'], 'List advanced information about every registered command', '[]')

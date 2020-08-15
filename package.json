@@ -1,5 +1,5 @@
 {
-  "name": "subiex",
+  "name": "utilllbot",
   "version": "1.2.0",
   "description": "A super fun and modular discord.js bot written in js",
   "main": "bot.js",
@@ -20,20 +20,12 @@
   "scripts": {
     "start": "node bot.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/klendi/subiex.git"
-  },
   "keywords": [
     "discord",
     "bot",
     "node",
     "discord.js"
   ],
-  "author": "klendi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/klendi/subiex/issues"
-  },
-  "homepage": "https://github.com/klendi/subiex#readme"
+  "author": "heaven",
+  "license": "MIT"
 }

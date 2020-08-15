@@ -44,4 +44,4 @@ Confax.registerCommand('cmdhelp', 'default', (message, bot) => {
         helpInfo = 'Command with the name `' + cmd + '` not found.'
     }
     return helpInfo
-}, ['cmdinfo'], 'List detailed information about a command', '<command>')
+}, ['cmdinfo', 'chelp'], 'List detailed information about a command', '<command>')

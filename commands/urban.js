@@ -11,26 +11,26 @@
     The API request can be found here: http://api.urbandictionary.com/v0/
 
     Usage:
-      !urban <Any Word Or Sentence Here>
+    !urban <Any Word Or Sentence Here>
 
     Example:
-      !urban gtg
+    !urban gtg
     
     GTG
-      ------ Definition ------
-      Internet shorthand for "got to go". Also it can mean "good to go" depending on contex
-      ------ Second Definition ------
-      got to go
+    ------ Definition ------
+    Internet shorthand for "got to go". Also it can mean "good to go" depending on contex
+    ------ Second Definition ------
+    got to go
 
-      ------ First Example ------
-      Good to go:
-      "Say im heading out. You coming?"
-      "gtg"
+    ------ First Example ------
+    Good to go:
+    "Say im heading out. You coming?"
+    "gtg"
 
-      Got to go:
-      "Shoot, it's almost midnight gtg."
-      ------ Second Example ------
-      Rachel I gtg
+    Got to go:
+    "Shoot, it's almost midnight gtg."
+    ------ Second Example ------
+    Rachel I gtg
     ------------------------------------------------------------------------
 
 */
@@ -45,7 +45,7 @@ var randomCache = []
 Subiex.registerCommand('urban', 'default', (message) => {
     let msg = message.content + '';
 
-    term(msg, function(error, entries) {
+    term(msg, function (error, entries) {
         if (error) {
             console.error(error.message)
             message.channel.send(error.message);
@@ -106,7 +106,7 @@ Subiex.registerCommand('urban', 'default', (message) => {
 }, ['urban', 'urban', 'urban-dict'], 'Get urban dictionary word explanation!', '[]')
 
 function get(url, callback) {
-    http.get(url, function(result) {
+    http.get(url, function (result) {
         const contentType = result.headers['content-type']
         const statusCode = result.statusCode
 
@@ -127,10 +127,10 @@ function get(url, callback) {
         result.setEncoding('utf8')
 
         let rawData = ''
-        result.on('data', function(buffer) {
+        result.on('data', function (buffer) {
             rawData += buffer
         })
-        result.on('end', function() {
+        result.on('end', function () {
             try {
                 callback(null, JSON.parse(rawData))
             } catch (error) {
@@ -142,7 +142,7 @@ function get(url, callback) {
 }
 
 function term(word, callback) {
-    get('http://api.urbandictionary.com/v0/define?term=' + encodeURIComponent(word), function(error, result) {
+    get('http://api.urbandictionary.com/v0/define?term=' + encodeURIComponent(word), function (error, result) {
         if (error) {
             callback(error)
             return
