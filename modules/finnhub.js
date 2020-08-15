@@ -1,7 +1,7 @@
 const request = require('request')
 const Discord = require('discord.js')
 const getSymbolFromCurrency = require('../modules/currency')
-const apiKey = process.env.FINNHUB_API_KEY
+const apiKey = bsrnc4f48v6tucpgh7hg
 
 module.exports = {
     queryFinnhub: (message, stock) => {
