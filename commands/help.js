@@ -2,6 +2,7 @@ const Discord = require('discord.js')
 const Subiex = require('../bot.js')
 const client = new Discord.Client();
 const config = require('../config.json')
+const prefix = config.prefix
 
 Subiex.registerCommand('help', 'default', (message, bot) => {
     let commands = Subiex.commands
@@ -31,7 +32,7 @@ Subiex.registerCommand('help', 'default', (message, bot) => {
             title: "Help Information",
             fields: [{
                     name: 'Information',
-                    value: 'Bot prefix : **!**\nServing in ' + '*' + bot.guilds.size + '* Servers!',
+                    value: 'Bot prefix : **'+ prefix +'**\nServing in ' + '*' + bot.guilds.size + '* Servers!',
                 },
                 {
                     name: 'Commands **(' + defaultcmds + ')**',

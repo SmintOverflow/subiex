@@ -11,7 +11,7 @@ Subiex.registerCommand('ban', 'moderator', (message, bot) => {
     return 'Please mention a user, that you would like to ban.'
   } else {
     if (!banPerms) {
-      return "Subiex doesn't have enough permissions to ban any user."
+      return "the bot doesn't have enough permissions to ban any user."
     } else {
       let bannable = message.guild.member(mention).bannable
       if (!bannable) {

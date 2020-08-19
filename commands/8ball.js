@@ -29,26 +29,10 @@ Subiex.registerCommand('8ball', 'default', (message, bot) => {
         message.channel.send({
             embed: {
                 color: 0xfc1846,
-                description: '**' + 'why ya ask nothing to the 8ball, why?' + '**',
+                description: '**' + 'why ya ask nothing to the 8ball, why? ya dum?' + '**',
             }
         });
         return;
     }
-    if (message.content == "is smint gae?") {
-        message.channel.send("are you gae?");
-        return;
-    }
-    if (message.content == "is smint gae") {
-        message.channel.send("are you gae?");
-        return;
-    }
-    if (message.content == "is smint gay?") {
-        message.channel.send("are you gae?");
-        return;
-    }
-    if (message.content == "is smint gay") {
-        message.channel.send("are you gae?");
-        return;
-    }
     message.channel.send(responses[randomIndex])
-}, ['eightball'], 'Ask The 8Ball!', '[]')
+}, ['eightball'], 'Ask The 8Ball A Yes Or Question.', '[]')

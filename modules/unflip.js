@@ -16,7 +16,7 @@ const bot = Subiex.bot
 const config = Subiex.config
 
 bot.on('message', message => {
-  if (message.content.includes('(╯°□°）╯︵ ┻━┻')) {
+    if (message.content.includes('(╯°□°）╯︵ ┻━┻')) {
     message.channel.send('┬─┬ ノ( ゚- ゚ノ)')
-  }
+}
 })
