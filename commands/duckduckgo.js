@@ -13,4 +13,4 @@ Subiex.registerCommand('duckduckgo', 'default', (message, bot) => {
     }
     message.channel.send(":zap: **DuckDuckGo Brrr** :zap: ")
     message.channel.send('http://duckduckgo.com/?q=' + encodeURIComponent(message))
-}, ['privategoogle', 'ddg', 'duckduckgobrrr'], 'Generate a duckduckgo search (basically google without trackers) link', '<expression>')
+}, ['privategoogle', 'ddg', 'duckduckgobrrr'], 'Generate a duckduckgo (basically google without trackers) link', '<expression>')
