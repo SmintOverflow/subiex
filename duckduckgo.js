@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const Subiex = require('../bot.js')
+const Subiex = require('./bot.js')
 
 Subiex.registerCommand('duckduckgo', 'default', (message, bot) => {
     if (message.content.length == 0) {
